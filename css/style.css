@@ -1,3 +1,10 @@
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
     background-color: #FFFFFF;
     color:#434455 ;
@@ -7,20 +14,49 @@ body {
     letter-spacing: 0.03em;
     font-family:'Roboto', sans-serif;
 }
+img {
+    display: block;
+}
+.header {
+    border-bottom: 1px solid #e7e9fc;
+    height: 72px;
+}
+.header-div{
+    display: flex;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .logo {
-    text-transform: uppercase;
-    color: #4D5AE5;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+    margin-right: 76px;
+}
+.header-ul {
+ display: flex;
+ gap: 40px;    
+}
+.header-ul .list:last-child{
+    margin-right: 0;
 }
 .studio {
     color: #2E2F42;
 }
 .nav-bar {
     background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
 }
 .list-htwo {
     font-weight: 500;
@@ -29,6 +65,7 @@ body {
     letter-spacing: 0.02em;
     color: #2E2F42;
 }
+
 
 .list {
     list-style-type: none;
@@ -39,6 +76,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    padding: 24px 0;
 }
 .header-ul .list .etiket:hover {
     color: #404bbf;
